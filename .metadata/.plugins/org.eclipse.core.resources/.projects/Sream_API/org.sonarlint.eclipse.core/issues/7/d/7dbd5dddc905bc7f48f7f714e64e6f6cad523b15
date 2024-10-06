@@ -1,0 +1,12 @@
+
+e	java:S1064"+Replace this use of System.out by a logger.8Ö‰Ãçã2b bb1c3f2ea781263d3a2bb92b06a2061fh
+v	java:S125("<This block of commented-out lines of code should be removed.8áçËçã2b a2345e0e7b856088d2cbf0ccbf956400h
+î
+java:S2293)"YReplace the type specification in this constructor call with the diamond operator ("<>").8¶Ô÷åã2b 7955042fa33539ae2f014255b735583bh
+v	java:S1251"<This block of commented-out lines of code should be removed.8¸¬Ÿçã2b 9a5cd2cf80908302938651ec922bf52bh
+v	java:S125"<This block of commented-out lines of code should be removed.8áçËçã2b a575c6437592b1bf1afaa53a21300e83h
+v	java:S125"<This block of commented-out lines of code should be removed.8ûÄÈçã2b 1cec7b723f796076b0e478373b90d8c6h
+o
+java:S1128"4Remove this unused import 'java.util.stream.Stream'.8áçËçã2b 14466d6b4e392d8c4a05833c5900ee56h
+|
+java:S1126"AReplace this if-then-else statement by a single return statement.8Ö‰Ãçã2b 39c8942e1038872a822c0dc75eedbde3h

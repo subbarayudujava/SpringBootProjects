@@ -1,0 +1,7 @@
+
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8¼žð¬„2b 0132ec8cee01c5dd244e1a60fe6448a1h
+ 
+java:S6833"eReplace the "@Controller" annotation by "@RestController" and remove all "@ResponseBody" annotations.8¥ù§Ð„2b dee1a9dfa91ea501126d7a4ecdad8cd0h
+š
+java:S1488-"_Immediately return this expression instead of assigning it to the temporary variable "reponse".8Ì«ÿ …2b dd604f61b931db1fbdf189c419dbcd3dh

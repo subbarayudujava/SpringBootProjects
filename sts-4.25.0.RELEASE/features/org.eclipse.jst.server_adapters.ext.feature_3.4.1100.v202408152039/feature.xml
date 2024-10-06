@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2009, 2024 IBM Corporation and others.
+    This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License 2.0
+    which accompanies this distribution, and is available at
+    https://www.eclipse.org/legal/epl-2.0/
+
+    SPDX-License-Identifier: EPL-2.0
+
+    Contributors:
+        IBM Corporation - initial API and implementation
+ -->
+<feature
+      id="org.eclipse.jst.server_adapters.ext.feature"
+      label="%featureName"
+      version="3.4.1100.v202408152039"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.jst.server.tomcat.core"
+         download-size="490"
+         install-size="994"
+         version="1.2.800.v202408152014"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.jst.server.tomcat.ui"
+         download-size="146"
+         install-size="298"
+         version="1.1.1100.v202408100311"
+         unpack="false"/>
+
+</feature>

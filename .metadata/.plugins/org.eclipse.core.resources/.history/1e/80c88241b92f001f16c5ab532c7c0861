@@ -1,0 +1,22 @@
+management:
+  endpoint:
+    info:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 5050
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    password: tiger
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: system
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.OracleDialect

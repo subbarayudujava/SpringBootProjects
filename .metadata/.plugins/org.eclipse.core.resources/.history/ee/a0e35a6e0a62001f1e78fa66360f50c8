@@ -1,0 +1,10 @@
+package com.nt.naresh;
+
+import lombok.Builder.Default;
+
+public interface ITest {
+	 void  m1() ;
+		
+	
+	
+}

@@ -1,0 +1,14 @@
+package com.nt.naresh;
+
+public class TestImpl {
+	
+	public static void main(String[] args) {
+     
+		ITest test= new ITest() {
+			public void m1() {
+				System.out.println("anonymouse Inner class ");
+			}
+		};
+		test.m1();
+	}
+}

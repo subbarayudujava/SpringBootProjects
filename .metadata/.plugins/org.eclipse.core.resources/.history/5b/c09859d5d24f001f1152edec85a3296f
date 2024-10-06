@@ -1,0 +1,22 @@
+
+package com.nt;
+
+import java.util.List;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.nt.entity.Actor;
+import com.nt.service.IActorService;
+
+@SpringBootApplication
+public class SpringBootJpaCrudRepositoryFirst1Application {
+
+	public static void main(String[] args) {
+		// get ico container
+		SpringApplication.run(SpringBootJpaCrudRepositoryFirst1Application.class, args);
+		}//main
+	}//class
+

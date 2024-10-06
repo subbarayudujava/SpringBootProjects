@@ -1,0 +1,8 @@
+package macces;
+
+@Component
+public class ContlolarClass {
+ public String Pizza() {
+	 return "ChikenPiza";
+ }
+}

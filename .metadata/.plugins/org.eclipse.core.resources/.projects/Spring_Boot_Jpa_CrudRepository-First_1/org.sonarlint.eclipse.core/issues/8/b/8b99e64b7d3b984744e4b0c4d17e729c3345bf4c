@@ -1,0 +1,11 @@
+
+k
+java:S1128"0Remove this unused import 'com.nt.entity.Actor'.8«“Ú»2b a4ad327c2609cc2e425203f0a2457284h
+f
+java:S1128"+Remove this unused import 'java.util.List'.8«“Ú»2b 647165940d2971f696436f6a7da1f89dh
+{
+java:S1854"@Remove this useless assignment to local variable "actorService".8«“Ú»2b 9e46e6104ea81cb2b20f0d66dfeec525h
+v	java:S125%"<This block of commented-out lines of code should be removed.8«“Ú»2b 80d5b17efc16ace990c07580fc3e85ebh
+l
+java:S1481"1Remove this unused "actorService" local variable.8«“Ú»2b a9e8779600eca49c39551215c968c2a1h
+o	java:S125"<This block of commented-out lines of code should be removed.b 80d5b17efc16ace990c07580fc3e85ebh

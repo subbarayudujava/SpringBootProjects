@@ -1,0 +1,6 @@
+
+v	java:S125"<This block of commented-out lines of code should be removed.8¼û£ƒ“2b e3574c73a84abd716deba7374e92881ah
+y
+java:S1155F">Use isEmpty() to check whether the collection is empty or not.8¦ÈË«“2b 9eeb40d312137f67b7f6a8e2f7177d4dh
+Â
+java:S2681J"†This line will not be executed conditionally; only the first line of this 2-line block will be. The rest will execute unconditionally.8¥¤Ù«“2b 99e3ebb2241623e65b0f80b9d16b2185h

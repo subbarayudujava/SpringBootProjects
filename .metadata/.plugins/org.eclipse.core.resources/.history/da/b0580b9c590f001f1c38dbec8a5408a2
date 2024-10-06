@@ -1,0 +1,8 @@
+# Data source Configaration(By Dault Hikaricp)
+spring.application.name=Spring_Bean_property-14
+spring.datasorce.driver-class-name=oracle.jdbc.driver.OracleDriver
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe
+spring.datasource.username=system
+spring.datasource.password=tiger
+
+#jpa Hibernate properties

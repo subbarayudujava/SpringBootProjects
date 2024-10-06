@@ -1,0 +1,15 @@
+
+package com.nt;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringBoo {
+
+	public static void main(String[] args) {
+		// get ico container
+		SpringApplication.run(SpringBootJpaCrudRepositoryFirst1Application.class, args);
+		}//main
+	}//class
+

@@ -1,0 +1,5 @@
+
+	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b e7e59bd1bf1b4a2ecbd369d8c9342bb1h
+	java:S116"VRename this field "PhoneNumber" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.8ç†¾‚Œ2b 677befbff0d2028b6eaf673212273a56h
+f
+java:S1128"+Remove this unused import 'lombok.NonNull'.8¶ı¼ŒŒ2b 009828a7578028cb4cf09ae91b04e6b6h

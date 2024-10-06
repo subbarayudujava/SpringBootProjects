@@ -1,0 +1,22 @@
+package com.nt.naresh;
+
+public class TestImpl {
+	
+	
+	public static void main(String[] args) {
+     
+		ITest test= new ITest() {
+			public void m1(int x) {
+				System.out.println("anonymouse Inner class x:"+x);
+			}
+		};
+		test.m1(10);
+		System.out.println("test value:"+test);
+		System.out.println();
+		ITest te=(x)->{
+			System.out.println("Lambeda Expreations");
+		};
+		te.m1(20);
+	}//main
+	
+}//class

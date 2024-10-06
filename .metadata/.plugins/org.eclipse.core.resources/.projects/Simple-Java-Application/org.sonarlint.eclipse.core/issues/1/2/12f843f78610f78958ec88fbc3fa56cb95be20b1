@@ -1,0 +1,17 @@
+
+Ñ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b b95c3d50fa47443166f7d356eaed8006h
+Ñ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b d2343779af2612774ee5216cc9677f6eh
+Ñ	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b d82d51b41e3055e9c92c8e338f33b5aeh
+Ñ	java:S1170"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b 6c57480f275bb1aa913bce3342974d8ch
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b 31ccd3515ab969a150f63c370e54b0eeh
+è
+java:S14880"[Immediately return this expression instead of assigning it to the temporary variable "EM3".b 6272fe4d74a2906f83702a04694a1113h
+v
+java:S6813"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+Å	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b c3684ffa47fe427a0c397664c2bdd54fh
+`
+java:S1172",Remove this unused method parameter "empId".b 98d48fe5b6fe317cec9f11cd2dcb68f4h
+Å	java:S100%"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b 690f49923ea08b2ebfe65947b530c461h
+Å	java:S100/"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.b c606b8ae345d37f88fcd570e31372a8ah
+`
+java:S1172/",Remove this unused method parameter "empId".b 98d48fe5b6fe317cec9f11cd2dcb68f4h

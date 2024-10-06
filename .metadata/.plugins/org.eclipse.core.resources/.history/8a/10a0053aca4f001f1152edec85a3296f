@@ -1,0 +1,8 @@
+package com.nt.repository;
+
+
+import com.nt.entity.Actor;
+
+public interface ActorRepository extends PagingAndSortingRepository<Actor, Integer> {
+
+}

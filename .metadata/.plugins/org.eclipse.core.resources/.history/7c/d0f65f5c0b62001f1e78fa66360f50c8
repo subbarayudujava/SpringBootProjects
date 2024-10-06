@@ -1,0 +1,12 @@
+package com.nt.naresh;
+
+public class TestImpl {
+	
+	
+	public static void main(String[] args) {
+      ITest test=()->{
+    	  System.out.println("Itest Method");
+      };
+      test.m1();
+	}
+}

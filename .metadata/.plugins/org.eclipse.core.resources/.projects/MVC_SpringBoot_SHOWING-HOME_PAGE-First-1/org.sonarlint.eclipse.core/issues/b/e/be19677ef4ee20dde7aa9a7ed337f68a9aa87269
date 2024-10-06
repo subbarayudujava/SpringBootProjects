@@ -1,0 +1,12 @@
+
+ç	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.b ec5d23d03f1d217095769912a41dbd72h
+v	java:S125"<This block of commented-out lines of code should be removed.8Ç∆≈πî2b 59bde43159ba663ac6797893e3ed205fh
+v	java:S125"<This block of commented-out lines of code should be removed.8≥çﬂœî2b 94c2dbe455f2ce2a996f080eb7a1b0b7h
+v	java:S125""<This block of commented-out lines of code should be removed.8Äíù–î2b 94c2dbe455f2ce2a996f080eb7a1b0b7h
+Ä	java:S112+"FDefine and throw a dedicated exception instead of using a generic one.8€Û∂–î2b b0d4998a26f5b5742ad38c4af8817e32h
+o
+java:S1128"4Remove this unused import 'java.time.LocalDateTime'.8€Û∂–î2b 275b9778ea2ddb3b8c20ea1d3578f784h
+e
+java:S1128"*Remove this unused import 'java.util.Map'.8€Û∂–î2b 03ec136776d19432e0a31b46ebe07d1ah
+V
+java:S3626/"Remove this redundant jump.8á´∏–î2b 505b97969baa28c3f607a38ee02f4f2dh

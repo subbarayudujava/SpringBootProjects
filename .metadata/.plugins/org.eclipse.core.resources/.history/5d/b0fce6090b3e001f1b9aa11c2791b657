@@ -1,0 +1,11 @@
+package com.streams;
+
+import java.util.ArrayList;
+
+public class StreamsApi {
+
+	public static void main(String[] args) {
+     ArrayList<Integer> list=new ArrayList<Integer>();
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MVC_SpringBoot4_FromData_Binding/src/main/webapp/WEB-INF/pages/show_report.jsp&apos; to &apos;show_register.jsp&apos;" description="Rename resource &apos;show_report.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/WEB-INF/pages/show_report.jsp" name="show_register.jsp" stamp="1723615578782" updateReferences="true"/>
+</session>

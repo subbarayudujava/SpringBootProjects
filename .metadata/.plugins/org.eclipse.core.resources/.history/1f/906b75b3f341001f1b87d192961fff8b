@@ -1,0 +1,58 @@
+package stream.shock.it;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class StreamAshock {
+	/*public void m1() {
+	
+	}
+	
+	public void m2(int x) {
+		//System.out.println(x.length);
+	}
+	
+	public void m3(int... x) {
+		System.out.println(x.length);
+	}*/
+
+	public static void main(String[] args) {
+		/*List<Integer> g = new ArrayList<Integer>();
+		g.add(10);
+		g.add(20);
+		
+		Stream<Integer> c = Stream.of(1, 2, 3, 4);
+		
+		System.out.println(c);
+		StreamAshock s1 = new StreamAshock();
+		s1.m1();
+		s1.m2(10);
+		s1.m3(10, 20, 50);*/
+		
+		//System.out.println(s1);
+		List<Emplyee> employee = new ArrayList<Emplyee>();
+		employee.add(new Emplyee(12, "Subbarayudu", 10000));
+		employee.add(new Emplyee(13, "Ravi", 20000));
+		employee.add(new Emplyee(14, "Rack", 30000));
+		employee.add(new Emplyee(13, "raj", 40000));
+		employee.add(new Emplyee(13, "Araku", 60000));
+		
+		for (int i = 0; i < employee.size(); i++) {
+			//if (employee.get(i).getSname().startsWith("A"));
+			//or
+			if (iftokenisAvialable(employee.get(i).getSname()))
+				System.out.println(employee.get(i).getSname());
+		}
+	}
+
+	
+	public static boolean iftokenisAvialable(String s) {
+		if (s.startsWith("A")) {
+			return true;
+		} else {
+			return false;
+
+		}
+	}
+}

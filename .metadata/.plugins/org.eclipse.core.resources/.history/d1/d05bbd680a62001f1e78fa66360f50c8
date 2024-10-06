@@ -1,0 +1,4 @@
+package com.nt.naresh;
+
+public interface ITest {
+}

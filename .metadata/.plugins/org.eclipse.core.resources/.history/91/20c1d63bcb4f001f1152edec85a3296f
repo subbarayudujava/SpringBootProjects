@@ -1,0 +1,183 @@
+
+package com.nt.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.nt.entity.Actor;
+import com.nt.repository.ActorRepository;
+
+@Service("ActorServie")
+public class ActorServiceImp implements IActorService {
+	@Autowired
+	private ActorRepository actorRepository;
+
+	@Override
+	public String registerActor(Actor actor) {
+		Actor actor2 = actorRepository.save(actor);
+
+		return "The actor data are storing:" + actor2.getAid();
+	}
+
+	@Override
+	public String registarGroup(List<Actor> list) { // group of values will add at a time
+		if (list != null) {
+			Iterable<Actor> list1 = actorRepository.saveAll(list);
+			List<Integer> ob1 = new ArrayList<Integer>();
+			for (Actor actor : list1) {
+				ob1.add(actor.getAid());
+			}
+			return ob1.size() + "object are save on the values:" + ob1;
+		}
+		return "problem is batch insertion";
+	}
+
+	// java 8 Version i java
+
+	/*@Override             
+	public String registarGroupOfvalue(Iterable<Actor> list) {
+	
+		if (list != null) {
+			List<Actor> entity = (List<Actor>) actorRepository.saveAll(list);
+			List<Integer> actor1 = entity.stream().map(actor -> actor.getAid()).collect(Collectors.toList());
+			return actor1.size() + "Object are saved having of values" + actor1;
+		} //if close
+	
+		return "problem is batch insertion";
+	}
+	*/
+	@Override
+	public long fectchingRecordscount() {
+		return actorRepository.count();
+
+	}
+
+	@Override
+	public Iterable<Actor> fetchinhAllactors() {
+		return actorRepository.findAll();
+
+	}
+
+	@Override
+	public boolean idisAvailable(int aid) {
+
+		return actorRepository.existsById(aid);
+	}
+
+	@Override
+	public Iterable<Actor> findAllById(Iterable<Integer> aid) {
+
+		return actorRepository.findAllById(aid);
+	}
+
+	@Override
+	public Optional<Actor> fetchingfindbyid(Integer aid) {
+		Optional<Actor> ob = actorRepository.findById(aid);
+		/*if(ob.isPresent())
+			System.out.print("Avlailable the id"+ob.get());
+		else {
+			System.out.print("The id not avlailable");
+		}*/
+		return ob;
+	}
+
+	@Override
+	public Actor showActorId(Integer aid) {
+		Optional<Actor> ob = actorRepository.findById(982);
+		if (ob.isPresent()) {
+			return ob.get();
+		} else {
+			throw new IllegalArgumentException("Actor not Fond");
+		}
+	}
+
+	//or
+	public Actor showActorId11(Integer aid) {
+		Optional<Actor> ob = actorRepository.findById(982);
+		return ob.orElseThrow(() -> new IllegalArgumentException("Actor not found"));
+	}
+	//or it is showing error
+
+	/*public Actor ShowActorId1(Integer aid) {
+	return actorRepository.findById(aid).orElseThrow(()->new IllegalAccessException("AActor No Found"));
+	}	*/
+
+	@Override
+	public String updateActornumber(Integer aid, Long newmobnumber) {
+		Optional<Actor> opt = actorRepository.findById(aid);
+		if (opt.isPresent()) {
+			Actor actor = opt.get();
+			actor.setMobnumber(newmobnumber);
+			actorRepository.save(actor);
+			return aid + " updated Actor mobile number" + newmobnumber;
+		} else {
+			return aid + "The id is not found";
+		}
+	}
+
+	@Override
+	public String updateActorData(Actor actor) {
+		Boolean flag = actorRepository.existsById(actor.getAid());
+		if (flag) {
+			actorRepository.save(actor);
+			return actor.getAid() + "update the Actor data";
+		} else {
+			return actor.getAid() + "the id is not found";
+		}
+		
+	}
+
+	@Override
+	public String rigisterOrUpdating(Actor actor) {
+		Actor actor2= actorRepository.save(actor);
+		return actor2.getAid()+"Rigister or Updating the row successfully";
+	}
+
+	@Override
+	public String removeActordata(Integer aid) {
+		Optional<Actor> opt=actorRepository.findById(aid);
+		if(opt.isPresent()) {
+			actorRepository.deleteById(aid);
+			return aid+"delete the data from a table";
+		}else {
+			
+			return aid+"id is not Available in the table";
+		}
+		
+	}
+///anothe way
+	@Override
+	public String removeActor(Actor actor) {
+		Boolean flag=actorRepository.existsById(actor.getAid());
+		if(flag) {
+			actorRepository.deleteById(actor.getAid());
+			return actor.getAid()+"delete data";
+		}else
+		return actor.getAid()+"id not Available";
+	}
+//another way
+	@Override
+	public String removeActordataFromTable(Integer aid) {
+		actorRepository.deleteById(aid);
+		return aid+"delete actor data";
+	}
+
+	@Override
+	public String removeAllActors() {
+		long count=actorRepository.count();
+		actorRepository.deleteAll();
+		return count+"delete record one by one";
+		
+	}
+
+	@Override
+	public String removeActorsByid(List<Integer> aid) {
+	    actorRepository.deleteAllById(aid);
+		return aid.size()+"delete no of ids ";
+	}
+}

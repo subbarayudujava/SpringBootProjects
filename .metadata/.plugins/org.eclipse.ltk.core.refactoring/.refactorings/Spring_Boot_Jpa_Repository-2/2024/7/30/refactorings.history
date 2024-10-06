@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;com.nt.thiru&apos; to &apos;Spring_Boot_Authentication_Athoraisation/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;Spring_Boot_Jpa_Repository-2&apos;&#x0D;&#x0A;- Destination element: &apos;Spring_Boot_Authentication_Athoraisation/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;Spring_Boot_Jpa_Repository-2/src/main/java/com.nt.thiru&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=Spring_Boot_Authentication_Athoraisation/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.nt.thiru" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1721614054433" version="1.0"/>
+</session>
